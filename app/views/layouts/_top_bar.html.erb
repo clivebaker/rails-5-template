@@ -1,0 +1,28 @@
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">Site Title</li>
+      <li>
+        <a href="#">One</a>
+        <ul class="menu vertical">
+          <li><a href="#">One</a></li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Two</a></li>
+      <li><a href="#">Three</a></li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li>
+        <a href="#"><i class="fi-torso"></i> Account</a>
+        <ul class="menu vertical">
+          <li><%= link_to "Edit", edit_user_registration_path %> </li>
+          <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>

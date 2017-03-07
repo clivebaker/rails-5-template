@@ -1,0 +1,15 @@
+<% if !notice.blank? %>
+
+	<div class="callout success devise-error top-margin">
+	  <p><i class="fi-info"></i> <%= notice %></p>
+	</div>
+
+<% end %>
+
+<% if !alert.blank? %>
+
+	<div class="callout alert devise-error top-margin">
+	  <p><i class="fi-alert"></i> <%= alert %></p>
+	</div>
+
+<% end %>

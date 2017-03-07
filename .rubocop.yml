@@ -12,75 +12,65 @@
 Metrics/LineLength:
   Max: 180
 
-# Offense count: 1
-# Configuration parameters: EnforcedStyle, SupportedStyles.
-# SupportedStyles: nested, compact
+Style/NumericLiterals:
+  MinDigits: 15
+
+Metrics/MethodLength:
+  Max: 20
+
 Style/ClassAndModuleChildren:
   Exclude:
     - 'test/test_helper.rb'
 
-# Offense count: 6
 Style/Documentation:
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
-    - 'app/controllers/application_controller.rb'
-    - 'app/controllers/home_controller.rb'
-    - 'app/helpers/application_helper.rb'
-    - 'app/helpers/home_helper.rb'
-    - 'app/mailers/application_mailer.rb'
-    - 'app/models/application_record.rb'
+  #  - 'app/controllers/application_controller.rb'
+  #  - 'app/controllers/home_controller.rb'
+  #  - 'app/helpers/application_helper.rb'
+  #  - 'app/helpers/home_helper.rb'
+  #  - 'app/mailers/application_mailer.rb'
+  #  - 'app/models/application_record.rb'
+    - 'db/migrate/*'
 
-# Offense count: 3
 # Cop supports --auto-correct.
 Style/EmptyLines:
   Exclude:
-#    - 'config/routes.rb'
+    - 'db/migrate/*'
 
-# Offense count: 2
 # Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, SupportedStyles.
-# SupportedStyles: empty_lines, no_empty_lines
+Style/ExtraSpacing:
+  Exclude:
+    - 'db/schema.rb'
+
+# Cop supports --auto-correct.
 Style/EmptyLinesAroundBlockBody:
   Exclude:
 #    - 'config/routes.rb'
     - 'db/schema.rb'
 
-# Offense count: 1
 # Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, SupportedStyles.
-# SupportedStyles: empty_lines, empty_lines_except_namespace, empty_lines_special, no_empty_lines
 Style/EmptyLinesAroundClassBody:
   Exclude:
-#    - 'test/controllers/home_controller_test.rb'
 
-# Offense count: 1
 # Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, SupportedStyles.
-# SupportedStyles: compact, expanded
 Style/EmptyMethod:
   Exclude:
- #   - 'app/controllers/home_controller.rb'
 
-# Offense count: 2
 # Cop supports --auto-correct.
 Style/SpaceInsideBrackets:
   Exclude:
-#    - 'config/environments/production.rb'
 
-# Offense count: 7
 # Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, SupportedStyles, ConsistentQuotesInMultiline.
-# SupportedStyles: single_quotes, double_quotes
 Style/StringLiterals:
   Exclude:
     - 'bin/spring'
+    - 'db/schema.rb'
 #    - 'config/environments/production.rb'
 #    - 'config/puma.rb'
 #    - 'test/controllers/home_controller_test.rb'
 
-# Offense count: 1
 # Cop supports --auto-correct.
 Style/TrailingWhitespace:
   Exclude:
-#    - 'config/routes.rb'
